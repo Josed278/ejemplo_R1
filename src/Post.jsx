@@ -5,3 +5,4 @@ funtion Post({postID}){
       </div>
   );
 }
+export default App
