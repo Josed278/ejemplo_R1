@@ -8,8 +8,12 @@ import Post from "./Post";
 function App() {
   const [count, setCount] = useState(0);
 
-  return;
-  <Post postID={1} />;
+  return (
+    <div>
+      <Post postID={1} />
+      <Post postID={22} />
+    </div>
+  );
 }
 
 export default App;

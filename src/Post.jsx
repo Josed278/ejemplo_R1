@@ -7,7 +7,7 @@ function Post({ postID }) {
   // const [post, setPost] = useState({id:null, title:null, body:null});
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts/${postID}")
+    fetch(`https://jsonplaceholder.typicode.com/posts/${postID}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Error al obtener la respuesta");
@@ -27,12 +27,12 @@ function Post({ postID }) {
   return (
     <div className="box">
       {loading ? (
-        <p className="Subtitulo">"Cargando..."</p>
+        <p className="subtitle">"Cargando..."</p>
       ) : (
         <div>
-          <p className="subtitulo">
+          <p className="subtitle">
             <strong>{post.title}</strong>
-            <small>ID:({post.posid})</small>
+            <small>ID: ({postID})</small>
           </p>
           <p>{post.body}</p>
         </div>
