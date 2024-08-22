@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Post postID={1} />
-      <Post postID={22} />
+      <Post postID={15} />
     </div>
   );
 }
